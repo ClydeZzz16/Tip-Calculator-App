@@ -59,3 +59,59 @@
   background-color: #f4fafa;
   color: #00494d;
 }
+
+/* Right Panel Styles */
+.right-panel {
+  background-color: #00494d;
+  color: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.result-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.result-label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.result-label span:first-child {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.result-label span:last-child {
+  font-size: 0.8rem;
+  color: #7f9c9f;
+}
+
+.result-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #26c0ab;
+}
+
+.reset-btn {
+  background-color: #26c0ab;
+  border: none;
+  border-radius: 5px;
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #00494d;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.reset-btn:hover {
+  background-color: #9fe8df;
+}

@@ -41,9 +41,28 @@ export default function Home() {
   </div>
 </div>
 
-      <div className="right-panel">
-        <h2>Results</h2>
+      <div className={styles["right-panel"]}>
+  <div>
+    <div className={styles["result-group"]}>
+      <div className={styles["result-label"]}>
+        <span>Tip Amount</span>
+        <span>/ person</span>
       </div>
+      <div className={styles["result-value"]}>$0.00</div>
+    </div>
+
+    <div className={styles["result-group"]}>
+      <div className={styles["result-label"]}>
+        <span>Total</span>
+        <span>/ person</span>
+      </div>
+      <div className={styles["result-value"]}>$0.00</div>
+    </div>
+  </div>
+
+  <button className={styles["reset-btn"]}>Reset</button>
+</div>
+
     </main>
   );
 }
