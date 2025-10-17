@@ -1,0 +1,143 @@
+.container {
+  background-color: #c5e4e7;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Space Mono', monospace;
+}
+
+.calculator {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  border-radius: 1.2rem;
+  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  width: 90%;
+  gap: 2rem;
+}
+
+.leftPanel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.leftPanel label {
+  color: #5e7a7d;
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+  display: block;
+}
+
+.leftPanel input {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 0.4rem;
+  border: none;
+  background-color: #f3f8fb;
+  text-align: right;
+  font-size: 1.2rem;
+  color: #00494d;
+}
+
+.leftPanel input:focus {
+  outline: 2px solid #26c0ab;
+}
+
+.tipButtons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.tipButtons button {
+  background-color: #00494d;
+  color: white;
+  border: none;
+  padding: 0.6rem;
+  font-size: 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+.tipButtons button:hover,
+.tipButtons button.active {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+
+.customInput {
+  background-color: #f3f8fb;
+  color: #5e7a7d;
+  text-align: center;
+}
+
+.rightPanel {
+  flex: 1;
+  background-color: #00494d;
+  border-radius: 1rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.amountDisplay {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.resultRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resultRow p {
+  margin: 0;
+  color: #c5e4e7;
+}
+
+.resultRow h2 {
+  margin: 0;
+  font-size: 2rem;
+  color: #26c0ab;
+}
+
+.resetButton {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1.1rem;
+  background-color: #26c0ab;
+  border: none;
+  border-radius: 0.4rem;
+  color: #00494d;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.resetButton:hover {
+  background-color: #9fe8df;
+}
+
+/* 🔹 Responsive for mobile */
+@media (max-width: 768px) {
+  .calculator {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .tipButtons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .resultRow h2 {
+    font-size: 1.6rem;
+  }
+}
