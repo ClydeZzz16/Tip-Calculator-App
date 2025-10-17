@@ -1,0 +1,61 @@
+/* Left Panel Styles */
+
+.left-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.left-panel label {
+  color: #5e7a7d;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+
+/* Input fields (Bill & People) */
+.input-field {
+  background-color: #f4fafa;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #00494d;
+  padding: 0.5rem 1rem;
+  text-align: right;
+}
+
+.input-field:focus {
+  outline: 2px solid #26c0ab;
+}
+
+/* Tip selection grid */
+.tip-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.8rem;
+}
+
+.tip-button {
+  background-color: #00494d;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.tip-button.active,
+.tip-button:hover {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+
+.tip-custom {
+  background-color: #f4fafa;
+  color: #00494d;
+}
